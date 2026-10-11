@@ -1,0 +1,18 @@
+import numpy as np
+import pandas as pd
+
+from data_preprocessing import (
+    X_train_scaled, X_val_scaled, X_test_scaled,
+    y_train_encoded, y_val_encoded, y_test
+)
+
+
+results = []
+
+learning_rates = [0.001, 0.01, 0.1]
+activations = ["sigmoid", "relu", "tanh"]
+architectures = [(8, 6), (16, 8)]
+
+print("Learning rates:", learning_rates)
+print("Activation functions:", activations)
+print("Architectures:", architectures)
